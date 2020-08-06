@@ -1,0 +1,2 @@
+rootProject.name='Gasco'
+include ':app'

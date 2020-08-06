@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gasco">
+
+    <application
+        android:name=".UI.Activities.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name=".services.SessionService" android:enabled="true" />
+
+        <activity android:name=".UI.Activities.LogDetailsActivity"></activity>
+        <activity android:name=".UI.Activities.WorkRosterActivity" />
+        <activity android:name=".UI.Activities.RegistrationPasswordActivity" />
+        <activity android:name=".UI.Activities.PasswordActivity" />
+        <activity android:name=".UI.Activities.ProfileEditActivity" />
+        <activity android:name=".UI.Activities.CNGProcedureActivity" />
+        <activity android:name=".UI.Activities.CNGDispenseRecordActivity" />
+        <activity android:name=".UI.Activities.ProfileActivity" />
+        <activity android:name=".UI.Activities.DashboardActivity" />
+        <activity android:name=".UI.Activities.RegistrationActivity" />
+        <activity
+            android:name=".UI.Activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
